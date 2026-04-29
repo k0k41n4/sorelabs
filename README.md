@@ -1,43 +1,46 @@
-# Astro Starter Kit: Minimal
+# SORELABS | Digital Infrastructure Agency
 
-```sh
-npm create astro@latest -- --template minimal
-```
+![Sorelabs Banner](https://raw.githubusercontent.com/k0k41n4/sorelabs/main/public/favicon.svg)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**Build Value, Not Just Software.**
 
-## 🚀 Project Structure
+Sorelabs is a high-end digital infrastructure agency specializing in crafting performance-driven landing pages, scalable SaaS ecosystems, and intelligent AI integrations. We transform complex ideas into essential, high-impact digital products.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚀 The Sorelabs Ecosystem
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+We don't just build code; we build value. Our current product suite includes:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- **Sorecare**: Specialized jobboard for home care freelance services.
+- **Inivime**: Premium digital invitation platform for modern events.
+- **Pageooo**: The ultimate e-catalog and landing page builder for businesses.
+- **Oxcy**: An AI-powered emotional companion.
+- **Jreify**: Curated trip planning with an integrated booking system.
+- **Wanbe**: A modern digital media platform.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 🛠️ Tech Stack
 
-Any static assets, like images, can be placed in the `public/` directory.
+Built with a cutting-edge performance-first stack:
 
-## 🧞 Commands
+- **Framework**: [Astro](https://astro.build/) (Static Site Generation & Performance)
+- **UI Logic**: [Svelte 5](https://svelte.dev/) (Runes for reactive state management)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) (Modern, utility-first CSS)
+- **Design System**: Dark-themed glassmorphism with "Outfit" premium typography.
 
-All commands are run from the root of the project, from a terminal:
+## ✨ Key Features
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- **High-Fidelity Animations**: Custom SVG-animated sun logo and smooth transitions.
+- **Functional Minimalism**: Every pixel serves a purpose, ensuring maximum ROI and UX.
+- **Global Scalability**: Architecture designed to handle international traffic from day one.
+- **Direct Engagement**: Integrated WhatsApp and Email contact systems for instant conversion.
 
-## 👀 Want to learn more?
+## 📞 Get In Touch
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Ready to build something meaningful?
+
+- **WhatsApp**: [+62 896 7020 2495](https://wa.me/6289670202495)
+- **Instagram**: [@sorelabs](https://www.instagram.com/sorelabs/)
+- **Email**: myslatudio@gmail.com
+
+---
+
+© 2026 SORELABS. All rights reserved.
