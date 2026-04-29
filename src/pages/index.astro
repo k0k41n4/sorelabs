@@ -21,11 +21,11 @@ import Button from "../components/Button.svelte";
 	<body class="bg-background text-foreground selection:bg-accent selection:text-background">
 		<Navbar client:load />
 
-		<main class="min-h-screen flex flex-col items-center justify-center px-4 pt-40 pb-20 max-w-7xl mx-auto">
+		<main class="min-h-screen flex flex-col items-center justify-center px-4 pt-40 pb-32 max-w-7xl mx-auto">
 			
 			<!-- Hero Headline -->
-			<section class="text-center mb-24 animate-slide-up">
-				<h1 class="text-6xl md:text-9xl font-bold tracking-tight mb-4 uppercase">
+			<section class="text-center mb-24 animate-slide-up w-full overflow-hidden">
+				<h1 class="text-4xl sm:text-6xl md:text-9xl font-bold tracking-tight mb-4 uppercase text-center break-words px-2">
 					Let's Talk <span class="text-muted">[</span>Digital Infrastructure<span class="text-muted">]</span>
 				</h1>
 			</section>
@@ -57,8 +57,8 @@ import Button from "../components/Button.svelte";
 			</section>
 
 			<!-- CTA Section -->
-			<section class="flex flex-col items-center gap-8 animate-slide-up-delayed w-full">
-				<div class="flex flex-col items-end w-full">
+			<section class="flex flex-col items-center gap-8 animate-slide-up-delayed w-full text-center">
+				<div class="flex flex-col items-center w-full">
 					<Button href="https://wa.me/6289670202495" variant="primary">
 						LET'S TALK
 					</Button>
