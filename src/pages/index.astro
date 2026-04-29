@@ -1,0 +1,98 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.svelte";
+import Footer from "../components/Footer.svelte";
+import TierCard from "../components/TierCard.svelte";
+import Button from "../components/Button.svelte";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>SORELABS | Digital Infrastructure Agency</title>
+		<meta name="description" content="Sorelabs focuses on making high-performance landing pages and digital infrastructure for businesses." />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-background text-foreground selection:bg-accent selection:text-background">
+		<Navbar client:load />
+
+		<main class="min-h-screen flex flex-col items-center justify-center px-4 pt-40 pb-20 max-w-7xl mx-auto">
+			
+			<!-- Hero Headline -->
+			<section class="text-center mb-24 animate-slide-up">
+				<h1 class="text-6xl md:text-9xl font-bold tracking-tight mb-4 uppercase">
+					Let's Talk <span class="text-muted">[</span>Digital Infrastructure<span class="text-muted">]</span>
+				</h1>
+			</section>
+
+			<!-- Tiers Grid -->
+			<section class="grid grid-cols-1 md:grid-cols-3 border border-border rounded-xl overflow-hidden mb-16 animate-fade-in-delayed">
+				<TierCard 
+					tier="1"
+					title="Bespoke Landing Page"
+					price="$3,000"
+					target="Pinterest, Bule Startups, Luxury Branding"
+					pitch="Fastest in the world. Maintenance-free, bunker-secure, minimalist design. Crafting a digital asset that sells."
+				/>
+				<TierCard 
+					tier="2"
+					title="Interactive Web Application"
+					price="$7,500 - $10,000"
+					target="Platform Curation, Dashboards, Interactive Tools (e.g., Jreify)"
+					pitch="Extreme Svelte 5 (Runes) performance. Smooth logic, smart state, unique UI. We don't just build, we architect."
+				/>
+				<TierCard 
+					tier="3"
+					title="Full-Stack SaaS / Enterprise System"
+					price="[LET'S TALK]"
+					target="Business Platforms (e.g., Pageooo, Oxcy), Scalable Apps"
+					pitch="Future-proof business foundation. Scalable data, bunker-safe security, integrated custom AI with soul."
+					highlight={true}
+				/>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="flex flex-col items-center gap-8 animate-slide-up-delayed w-full">
+				<div class="flex flex-col items-end w-full">
+					<Button href="https://wa.me/6289670202495" variant="primary">
+						LET'S TALK
+					</Button>
+				</div>
+				
+				<p class="text-xl italic text-muted font-medium">
+					Only 2 slots available for Q2 to ensure craftsmanship quality.
+				</p>
+			</section>
+
+		</main>
+
+		<Footer />
+
+		<!-- Subtle Background Decorations -->
+		<div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
+			<div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-accent/5 blur-[120px] rounded-full"></div>
+			<div class="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-accent/5 blur-[120px] rounded-full"></div>
+		</div>
+
+		<style>
+			@keyframes fadeIn {
+				from { opacity: 0; }
+				to { opacity: 1; }
+			}
+			@keyframes slideUp {
+				from { opacity: 0; transform: translateY(20px); }
+				to { opacity: 1; transform: translateY(0); }
+			}
+			.animate-fade-in-delayed { animation: fadeIn 1s ease-out 0.5s forwards; opacity: 0; }
+			.animate-slide-up { animation: slideUp 1s ease-out forwards; }
+			.animate-slide-up-delayed { animation: slideUp 1s ease-out 0.8s forwards; opacity: 0; }
+		</style>
+	</body>
+</html>
+
+
