@@ -2,82 +2,178 @@
 import "../styles/global.css";
 import Navbar from "../components/Navbar.svelte";
 import Footer from "../components/Footer.svelte";
-import TierCard from "../components/TierCard.svelte";
+import ProductShowcase from "../components/ProductShowcase.svelte";
+import InsightCard from "../components/InsightCard.svelte";
 import Button from "../components/Button.svelte";
 ---
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>SORELABS | Digital Infrastructure Agency</title>
-		<meta name="description" content="Sorelabs focuses on making high-performance landing pages and digital infrastructure for businesses." />
+		<title>SORELABS | High-Performance Digital Assets</title>
+		<meta name="description" content="We engineer premium, conversion-optimized digital assets for luxury brands and startups. One page. Zero maintenance. Built to sell." />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 	</head>
-	<body class="bg-background text-foreground selection:bg-accent selection:text-background">
+	<body class="bg-background text-foreground selection:bg-accent selection:text-background relative">
 		<Navbar client:load />
 
-		<main class="min-h-screen flex flex-col items-center justify-center px-4 pt-40 pb-16 max-w-7xl mx-auto">
+		<!-- Subtle Background Decorations -->
+		<div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
+			<div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-accent/5 blur-[120px] rounded-full"></div>
+			<div class="absolute top-[40%] left-[-10%] w-[30%] h-[40%] bg-accent/5 blur-[150px] rounded-full"></div>
+			<div class="absolute bottom-[-10%] right-[10%] w-[40%] h-[40%] bg-accent/10 blur-[150px] rounded-full"></div>
+		</div>
+
+		<main class="flex flex-col items-center w-full">
 			
-			<!-- Hero Headline -->
-			<section class="text-center mb-24 animate-slide-up w-full overflow-hidden">
-				<h1 class="text-4xl sm:text-6xl md:text-9xl font-bold tracking-tight mb-4 uppercase text-center break-words px-2">
-					Let's Talk <span class="text-muted">[</span>Digital Infrastructure<span class="text-muted">]</span>
-				</h1>
-			</section>
-
-			<!-- Tiers Grid -->
-			<section class="grid grid-cols-1 md:grid-cols-3 border border-border rounded-xl overflow-hidden mb-16 animate-fade-in-delayed">
-				<TierCard 
-					tier="1"
-					title="Bespoke Landing Page"
-					price="$3,000"
-					target="Pinterest, Bule Startups, Luxury Branding"
-					pitch="Fastest in the world. Maintenance-free, bunker-secure, minimalist design. Crafting a digital asset that sells."
-				/>
-				<TierCard 
-					tier="2"
-					title="Interactive Web Application"
-					price="$7,500 - $10,000"
-					target="Platform Curation, Dashboards, Interactive Tools (e.g., Jreify)"
-					pitch="Extreme Svelte 5 (Runes) performance. Smooth logic, smart state, unique UI. We don't just build, we architect."
-				/>
-				<TierCard 
-					tier="3"
-					title="Full-Stack SaaS / Enterprise System"
-					price="[LET'S TALK]"
-					target="Business Platforms (e.g., Pageooo, Oxcy), Scalable Apps"
-					pitch="Future-proof business foundation. Scalable data, bunker-safe security, integrated custom AI with soul."
-					highlight={true}
-				/>
-			</section>
-
-			<!-- CTA Section -->
-			<section class="flex flex-col items-center gap-8 animate-slide-up-delayed w-full text-center">
-				<div class="flex flex-col items-center w-full">
-					<Button href="https://wa.me/6289670202495" variant="primary">
-						LET'S TALK
-					</Button>
+			<!-- 1. HERO SECTION -->
+			<section class="min-h-screen flex flex-col items-center justify-center px-4 pt-32 pb-24 max-w-7xl mx-auto w-full text-center relative">
+				<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-sm font-medium tracking-wide mb-8 animate-fade-in">
+					<span class="relative flex h-3 w-3">
+					  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+					  <span class="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+					</span>
+					Now accepting clients for Q2
 				</div>
+
+				<h1 class="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter mb-8 uppercase text-center break-words px-2 animate-slide-up leading-[0.9]">
+					Stop <span class="text-muted line-through">Building</span><br/>
+					Start <span class="text-accent">Selling.</span>
+				</h1>
 				
-				<p class="text-xl italic text-muted font-medium">
-					Only 2 slots available for Q2 to ensure craftsmanship quality.
+				<p class="text-xl md:text-2xl text-muted max-w-3xl mx-auto mb-12 animate-slide-up-delayed leading-relaxed">
+					We engineer premium, single-page digital assets. <br class="hidden md:block"/>
+					Lightning-fast, flawlessly designed, and hosted on a dedicated subdomain. 
+					<strong class="text-white font-semibold">Your ultimate 24/7 salesperson.</strong>
 				</p>
+
+				<div class="animate-fade-in-delayed flex flex-col sm:flex-row gap-6 items-center">
+					<Button href="#product" variant="primary">
+						SEE THE ASSET
+					</Button>
+					<a href="https://wa.me/6289670202495" class="text-muted hover:text-white transition-colors underline-offset-4 hover:underline font-medium">
+						Or let's talk via WhatsApp ->
+					</a>
+				</div>
+			</section>
+
+			<!-- 2. FEATURE SECTION -->
+			<section id="features" class="w-full py-32 px-4 border-y border-white/5 bg-black/50 backdrop-blur-md">
+				<div class="max-w-7xl mx-auto">
+					<div class="text-center mb-20">
+						<h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Why Top Brands Choose Us</h2>
+						<p class="text-muted text-lg max-w-2xl mx-auto">It's not just a website. It's infrastructure designed to convert traffic into revenue with zero friction.</p>
+					</div>
+
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+						<!-- Feature 1 -->
+						<div class="p-8 rounded-3xl glass border-t-accent/50 border-t-2 hover:-translate-y-2 transition-transform duration-300">
+							<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
+								<svg class="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+								</svg>
+							</div>
+							<h3 class="text-2xl font-bold mb-3">Instant Loading</h3>
+							<p class="text-muted">Built on Astro. Zero JavaScript overhead by default. Pages load in milliseconds, drastically dropping bounce rates.</p>
+						</div>
+
+						<!-- Feature 2 -->
+						<div class="p-8 rounded-3xl glass border-t-accent/50 border-t-2 hover:-translate-y-2 transition-transform duration-300">
+							<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
+								<svg class="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.813-1.425a1.5 1.5 0 00.834-1.942 1.5 1.5 0 00-1.942-.834l-1.425 3.813a15.995 15.995 0 00-4.648 4.764m-3.42-3.42a16.008 16.008 0 00-4.648-4.764l-3.813 1.425A1.5 1.5 0 002.25 12c0 .248.06.48.163.684l1.425-3.813" />
+								</svg>
+							</div>
+							<h3 class="text-2xl font-bold mb-3">Aesthetic & Premium</h3>
+							<p class="text-muted">Interactive Svelte components, glassmorphism, and micro-animations that make your brand feel untouchable.</p>
+						</div>
+
+						<!-- Feature 3 -->
+						<div class="p-8 rounded-3xl glass border-t-accent/50 border-t-2 hover:-translate-y-2 transition-transform duration-300">
+							<div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-6">
+								<svg class="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+								</svg>
+							</div>
+							<h3 class="text-2xl font-bold mb-3">Done-For-You Subdomain</h3>
+							<p class="text-muted">We handle the tech. You get a ready-to-launch asset hosted on our secure subdomains (or yours). Zero maintenance required.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 3. PRODUCT SECTION -->
+			<section id="product" class="w-full py-32 px-4 relative">
+				<div class="max-w-7xl mx-auto">
+					<div class="text-center mb-16">
+						<h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">The Investment</h2>
+						<p class="text-muted text-lg max-w-2xl mx-auto">One product. One focus. Maximum results.</p>
+					</div>
+					
+					<ProductShowcase client:visible />
+				</div>
+			</section>
+
+			<!-- 4. THE TRUTH SECTION (Replacing Social Proof) -->
+			<section id="proof" class="w-full py-32 px-4 border-t border-white/5 bg-black/30">
+				<div class="max-w-7xl mx-auto">
+					<div class="text-center mb-16">
+						<h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">The Hard Truth About Conversions</h2>
+						<p class="text-muted text-lg max-w-2xl mx-auto">Why standard websites fail and why you need a dedicated sales infrastructure.</p>
+					</div>
+
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+						<InsightCard 
+							step="01"
+							title="Traditional Websites Are Dead"
+							description="Multi-page websites confuse visitors with too many options. A focused, single-page sales funnel forces the user to make a decision, drastically increasing your closing rate."
+						/>
+						<InsightCard 
+							step="02"
+							title="Speed is Pure Revenue"
+							description="A 1-second delay in page load drops conversions by 7%. We build on Astro, ensuring zero JavaScript overhead and instant loading times. Your traffic actually stays to buy."
+						/>
+						<InsightCard 
+							step="03"
+							title="The Premium Standard"
+							description="We don't use templates or clunky page builders. We engineer bespoke, interactive digital assets using Svelte that position your brand as the absolute premium choice in your market."
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- 5. CTA SECTION -->
+			<section class="w-full py-32 px-4 relative overflow-hidden">
+				<!-- CTA Background Glow -->
+				<div class="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none">
+					<div class="w-[800px] h-[400px] bg-accent/20 blur-[150px] rounded-full"></div>
+				</div>
+
+				<div class="max-w-4xl mx-auto text-center glass p-12 md:p-20 rounded-[3rem] relative border-accent/20">
+					<h2 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+						Ready to dominate your market?
+					</h2>
+					<p class="text-xl text-muted mb-12 max-w-2xl mx-auto">
+						We strictly take 2 clients per month to maintain extreme quality and craftsmanship. Secure your slot before it's gone.
+					</p>
+					
+					<a 
+						href="https://wa.me/6289670202495"
+						class="inline-block px-10 py-5 bg-white text-black font-extrabold text-xl rounded-2xl hover:bg-gray-200 transition-all hover:scale-105 shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_50px_rgba(255,255,255,0.4)]"
+					>
+						CLAIM YOUR SLOT VIA WHATSAPP
+					</a>
+				</div>
 			</section>
 
 		</main>
 
 		<Footer />
-
-		<!-- Subtle Background Decorations -->
-		<div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
-			<div class="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-accent/5 blur-[120px] rounded-full"></div>
-			<div class="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-accent/5 blur-[120px] rounded-full"></div>
-		</div>
 
 		<style>
 			@keyframes fadeIn {
@@ -85,14 +181,13 @@ import Button from "../components/Button.svelte";
 				to { opacity: 1; }
 			}
 			@keyframes slideUp {
-				from { opacity: 0; transform: translateY(20px); }
+				from { opacity: 0; transform: translateY(30px); }
 				to { opacity: 1; transform: translateY(0); }
 			}
-			.animate-fade-in-delayed { animation: fadeIn 1s ease-out 0.5s forwards; opacity: 0; }
+			.animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+			.animate-fade-in-delayed { animation: fadeIn 1s ease-out 0.8s forwards; opacity: 0; }
 			.animate-slide-up { animation: slideUp 1s ease-out forwards; }
-			.animate-slide-up-delayed { animation: slideUp 1s ease-out 0.8s forwards; opacity: 0; }
+			.animate-slide-up-delayed { animation: slideUp 1s ease-out 0.4s forwards; opacity: 0; }
 		</style>
 	</body>
 </html>
-
-
