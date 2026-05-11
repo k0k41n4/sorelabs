@@ -8,7 +8,7 @@
 
   const navLinks = [
     { name: "Features", href: "#features" },
-    { name: "The Asset", href: "#product" },
+    { name: "Plans", href: "#pricing" },
     { name: "Proof", href: "#proof" },
   ];
 </script>
@@ -31,8 +31,8 @@
         </a>
       {/each}
       <a 
-        href="https://wa.me/6289670202495" 
-        class="px-5 py-2.5 bg-accent text-background text-sm font-bold rounded-md hover:bg-accent-hover transition-all"
+        href="mailto:myslatudio@gmail.com?subject=Inquiry:%20High-Performance%20Infrastructure%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20goal%20with%20this%20project%20is:%20[Goal]%0D%0AOur%20target%20launch%20date%20is:%20[Date]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20in%20the%20$3,000+%20premium%20standard.%0D%0A%0D%0ALet%27s%20build%20something%20fast." 
+        class="px-6 py-3 bg-accent text-background text-sm font-black rounded-xl hover:bg-accent-hover transition-all tracking-widest uppercase"
       >
         LET'S TALK
       </a>
@@ -68,8 +68,8 @@
           </a>
         {/each}
         <a 
-          href="https://wa.me/6289670202495" 
-          class="w-full py-4 bg-accent text-background text-center font-bold rounded-lg"
+          href="mailto:myslatudio@gmail.com?subject=Inquiry:%20High-Performance%20Infrastructure%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20goal%20with%20this%20project%20is:%20[Goal]%0D%0AOur%20target%20launch%20date%20is:%20[Date]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20in%20the%20$3,000+%20premium%20standard.%0D%0A%0D%0ALet%27s%20build%20something%20fast." 
+          class="w-full py-5 bg-accent text-background text-center font-black rounded-2xl tracking-widest uppercase"
           onclick={() => isMenuOpen = false}
         >
           LET'S TALK

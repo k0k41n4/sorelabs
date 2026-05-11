@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import Navbar from "../components/Navbar.svelte";
 import Footer from "../components/Footer.svelte";
-import ProductShowcase from "../components/ProductShowcase.svelte";
+import PricingCard from "../components/PricingCard.svelte";
 import InsightCard from "../components/InsightCard.svelte";
 import Button from "../components/Button.svelte";
 ---
@@ -13,8 +13,8 @@ import Button from "../components/Button.svelte";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>SORELABS | High-Performance Digital Assets</title>
-		<meta name="description" content="We engineer premium, conversion-optimized digital assets for luxury brands and startups. One page. Zero maintenance. Built to sell." />
+		<title>Sorelabs — Your Digital Partner</title>
+		<meta name="description" content="We handle your digital infrastructure so you can focus on scaling. High-performance landing pages, growth optimization, and visual ecosystems." />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -33,32 +33,31 @@ import Button from "../components/Button.svelte";
 		<main class="flex flex-col items-center w-full">
 			
 			<!-- 1. HERO SECTION -->
-			<section class="min-h-screen flex flex-col items-center justify-center px-4 pt-32 pb-24 max-w-7xl mx-auto w-full text-center relative">
+			<section class="min-h-[90vh] flex flex-col items-center justify-center px-4 pt-32 pb-24 max-w-7xl mx-auto w-full text-center relative">
 				<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-white/80 text-sm font-medium tracking-wide mb-8 animate-fade-in">
 					<span class="relative flex h-3 w-3">
 					  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
 					  <span class="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
 					</span>
-					Now accepting clients for Q2
+					Scale your business online
 				</div>
 
-				<h1 class="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter mb-8 uppercase text-center break-words px-2 animate-slide-up leading-[0.9]">
-					Stop <span class="text-muted line-through">Building</span><br/>
-					Start <span class="text-accent">Selling.</span>
+				<h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter mb-8 uppercase text-center break-words px-2 animate-slide-up leading-[0.85]">
+					Sorelabs <br/>
+					<span class="text-accent">Digital Partner.</span>
 				</h1>
 				
 				<p class="text-xl md:text-2xl text-muted max-w-3xl mx-auto mb-12 animate-slide-up-delayed leading-relaxed">
-					We engineer premium, single-page digital assets. <br class="hidden md:block"/>
-					Lightning-fast, flawlessly designed, and hosted on a dedicated subdomain. 
-					<strong class="text-white font-semibold">Your ultimate 24/7 salesperson.</strong>
+					We handle your digital infrastructure so you can focus on scaling. <br class="hidden md:block"/>
+					<strong class="text-white font-semibold">Let’s connect and build. ☀</strong>
 				</p>
 
 				<div class="animate-fade-in-delayed flex flex-col sm:flex-row gap-6 items-center">
-					<Button href="#product" variant="primary">
-						SEE THE ASSET
+					<Button href="#pricing" variant="primary">
+						VIEW OUR PLANS
 					</Button>
-					<a href="https://wa.me/6289670202495" class="text-muted hover:text-white transition-colors underline-offset-4 hover:underline font-medium">
-						Or let's talk via WhatsApp ->
+					<a href="mailto:myslatudio@gmail.com?subject=Inquiry:%20High-Performance%20Infrastructure%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20goal%20with%20this%20project%20is:%20[Goal]%0D%0AOur%20target%20launch%20date%20is:%20[Date]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20in%20the%20$3,000+%20premium%20standard.%0D%0A%0D%0ALet%27s%20build%20something%20fast." class="text-muted hover:text-white transition-colors underline-offset-4 hover:underline font-medium">
+						Or let's talk via Email ->
 					</a>
 				</div>
 			</section>
@@ -67,8 +66,8 @@ import Button from "../components/Button.svelte";
 			<section id="features" class="w-full py-32 px-4 border-y border-white/5 bg-black/50 backdrop-blur-md">
 				<div class="max-w-7xl mx-auto">
 					<div class="text-center mb-20">
-						<h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Why Top Brands Choose Us</h2>
-						<p class="text-muted text-lg max-w-2xl mx-auto">It's not just a website. It's infrastructure designed to convert traffic into revenue with zero friction.</p>
+						<h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Why Businesses Partner With Us</h2>
+						<p class="text-muted text-lg max-w-2xl mx-auto">It's not just a website. It's digital infrastructure designed to scale your brand with zero friction.</p>
 					</div>
 
 					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -101,22 +100,71 @@ import Button from "../components/Button.svelte";
 									<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
 								</svg>
 							</div>
-							<h3 class="text-2xl font-bold mb-3">Done-For-You Subdomain</h3>
-							<p class="text-muted">We handle the tech. You get a ready-to-launch asset hosted on our secure subdomains (or yours). Zero maintenance required.</p>
+							<h3 class="text-2xl font-bold mb-3">Enterprise Infrastructure</h3>
+							<p class="text-muted">We handle the tech. You get a ready-to-launch ecosystem hosted on secure, globally distributed infrastructure. Zero maintenance required.</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<!-- 3. PRODUCT SECTION -->
-			<section id="product" class="w-full py-32 px-4 relative">
+			<!-- 3. PRICING SECTION -->
+			<section id="pricing" class="w-full py-32 px-4 relative">
 				<div class="max-w-7xl mx-auto">
-					<div class="text-center mb-16">
-						<h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">The Investment</h2>
-						<p class="text-muted text-lg max-w-2xl mx-auto">One product. One focus. Maximum results.</p>
+					<div class="text-center mb-20">
+						<h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6 uppercase">Service Ecosystem</h2>
+						<p class="text-muted text-lg max-w-2xl mx-auto">Flexible plans designed to grow with your business. No fluff, just performance.</p>
 					</div>
 					
-					<ProductShowcase client:visible />
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+						<PricingCard 
+							client:visible
+							name="Single-Page Asset"
+							price="$3,000"
+							features={[
+								"5 Shot Pitch Section",
+								"Copy of your Product",
+								"Performance Tracking",
+								"2 Revision"
+							]}
+						/>
+						<PricingCard 
+							client:visible
+							isPremium={true}
+							name="Growth & Optimization"
+							price="$1,500"
+							billing="/ month"
+							features={[
+								"A/B Testing",
+								"Monthly Performance Report",
+								"Unlimited Tweaks",
+								"Conversion Rate Optimization"
+							]}
+						/>
+						<PricingCard 
+							client:visible
+							name="Infrastructure & Support"
+							price="$500"
+							billing="/ month"
+							features={[
+								"Managed Hosting",
+								"Uptime Monitoring",
+								"1-2 Hours of technical help per month",
+								"Security Updates"
+							]}
+						/>
+						<PricingCard 
+							client:visible
+							name="Content & Visuals"
+							price="$2,000"
+							billing="/ month"
+							features={[
+								"Monthly visual asset design",
+								"Promo landing page updates",
+								"Social Media Kit",
+								"Custom Illustrations"
+							]}
+						/>
+					</div>
 				</div>
 			</section>
 
@@ -124,25 +172,25 @@ import Button from "../components/Button.svelte";
 			<section id="proof" class="w-full py-32 px-4 border-t border-white/5 bg-black/30">
 				<div class="max-w-7xl mx-auto">
 					<div class="text-center mb-16">
-						<h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">The Hard Truth About Conversions</h2>
-						<p class="text-muted text-lg max-w-2xl mx-auto">Why standard websites fail and why you need a dedicated sales infrastructure.</p>
+						<h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4 uppercase">The Infrastructure Gap</h2>
+						<p class="text-muted text-lg max-w-2xl mx-auto">Why standard setups are costing you fortunes—and how we bridge the gap.</p>
 					</div>
 
 					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 						<InsightCard 
 							step="01"
-							title="Traditional Websites Are Dead"
-							description="Multi-page websites confuse visitors with too many options. A focused, single-page sales funnel forces the user to make a decision, drastically increasing your closing rate."
+							title="Death by a Thousand Options"
+							description="Traditional multi-page websites are distractions, not assets. They confuse visitors and kill momentum. We build Single-Page Sales Engines that eliminate the noise, simplify the journey, and force a decision. The result? A conversion rate that actually moves the needle."
 						/>
 						<InsightCard 
 							step="02"
-							title="Speed is Pure Revenue"
-							description="A 1-second delay in page load drops conversions by 7%. We build on Astro, ensuring zero JavaScript overhead and instant loading times. Your traffic actually stays to buy."
+							title="Speed is a Financial Metric"
+							description="A 1-second delay isn't just a lag; it’s a 7% leak in your revenue. While your competitors struggle with bloated templates, we engineer on Astro. By stripping away the 'JavaScript junk,' we deliver instant-load experiences. The logic is simple: If they don't wait, they don't leave. If they stay, they buy."
 						/>
 						<InsightCard 
 							step="03"
-							title="The Premium Standard"
-							description="We don't use templates or clunky page builders. We engineer bespoke, interactive digital assets using Svelte that position your brand as the absolute premium choice in your market."
+							title="The End of 'Good Enough'"
+							description="Clunky page builders and generic templates tell your clients you’re average. We use Svelte to craft bespoke, interactive digital assets that feel as premium as your service. Our standard: We don't just build sites; we engineer high-performance systems that position you as the only logical choice in your market."
 						/>
 					</div>
 				</div>
@@ -156,18 +204,18 @@ import Button from "../components/Button.svelte";
 				</div>
 
 				<div class="max-w-4xl mx-auto text-center glass p-12 md:p-20 rounded-[3rem] relative border-accent/20">
-					<h2 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-						Ready to dominate your market?
+					<h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6 uppercase">
+						Ready to scale with a partner?
 					</h2>
 					<p class="text-xl text-muted mb-12 max-w-2xl mx-auto">
-						We strictly take 2 clients per month to maintain extreme quality and craftsmanship. Secure your slot before it's gone.
+						We take your business as seriously as you do. Let's talk about your vision and how we can help you scale with precision.
 					</p>
 					
 					<a 
-						href="https://wa.me/6289670202495"
-						class="inline-block px-10 py-5 bg-white text-black font-extrabold text-xl rounded-2xl hover:bg-gray-200 transition-all hover:scale-105 shadow-[0_0_30px_rgba(255,255,255,0.2)] hover:shadow-[0_0_50px_rgba(255,255,255,0.4)]"
+						href="mailto:myslatudio@gmail.com?subject=Inquiry:%20High-Performance%20Infrastructure%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20goal%20with%20this%20project%20is:%20[Goal]%0D%0AOur%20target%20launch%20date%20is:%20[Date]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20in%20the%20$3,000+%20premium%20standard.%0D%0A%0D%0ALet%27s%20build%20something%20fast."
+						class="inline-block px-12 py-6 bg-white text-black font-black text-xl rounded-2xl hover:bg-gray-200 transition-all hover:scale-105 shadow-[0_10px_40px_rgba(255,255,255,0.1)] hover:shadow-[0_15px_60px_rgba(255,255,255,0.2)] uppercase tracking-widest"
 					>
-						CLAIM YOUR SLOT VIA WHATSAPP
+						Let's Connect
 					</a>
 				</div>
 			</section>

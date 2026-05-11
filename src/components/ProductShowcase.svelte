@@ -56,7 +56,7 @@
         $3,000
       </div>
       <a 
-        href="https://wa.me/6289670202495"
+        href="mailto:myslatudio@gmail.com?subject=Inquiry:%20High-Performance%20Infrastructure%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20goal%20with%20this%20project%20is:%20[Goal]%0D%0AOur%20target%20launch%20date%20is:%20[Date]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20in%20the%20$3,000+%20premium%20standard.%0D%0A%0D%0ALet%27s%20build%20something%20fast."
         class="w-full text-center px-8 py-4 bg-white text-black font-bold rounded-xl hover:bg-gray-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
       >
         SECURE YOUR SLOT
