@@ -8,8 +8,8 @@
 
   const navLinks = [
     { name: "Features", href: "#features" },
-    { name: "Plans", href: "#pricing" },
-    { name: "Proof", href: "#proof" },
+    { name: "Blueprints", href: "#pricing" },
+    { name: "Insight", href: "#proof" },
   ];
 </script>
 
@@ -31,12 +31,12 @@
         </a>
       {/each}
       <a 
-        href="mailto:myslatudio@gmail.com?subject=Inquiry:%20High-Performance%20Infrastructure%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20goal%20with%20this%20project%20is:%20[Goal]%0D%0AOur%20target%20launch%20date%20is:%20[Date]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20in%20the%20$3,000+%20premium%20standard.%0D%0A%0D%0ALet%27s%20build%20something%20fast." 
+        href="mailto:myslatudio@gmail.com?subject=Consultation%20Inquiry:%20Digital%20Business%20Plan%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20challenge%20right%20now%20is:%20[Challenge]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20$1,000%20for%20the%20full%20digital%20business%20plan.%0D%0A%0D%0ALet%27s%20start%20consulting." 
         target="_blank"
         rel="noopener noreferrer"
         class="px-6 py-3 bg-accent text-background text-sm font-black rounded-xl hover:bg-accent-hover transition-all tracking-widest uppercase"
       >
-        LET'S TALK
+        CONSULT NOW
       </a>
     </div>
 
@@ -70,13 +70,13 @@
           </a>
         {/each}
         <a 
-          href="mailto:myslatudio@gmail.com?subject=Inquiry:%20High-Performance%20Infrastructure%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20goal%20with%20this%20project%20is:%20[Goal]%0D%0AOur%20target%20launch%20date%20is:%20[Date]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20in%20the%20$3,000+%20premium%20standard.%0D%0A%0D%0ALet%27s%20build%20something%20fast." 
+          href="mailto:myslatudio@gmail.com?subject=Consultation%20Inquiry:%20Digital%20Business%20Plan%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20challenge%20right%20now%20is:%20[Challenge]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20$1,000%20for%20the%20full%20digital%20business%20plan.%0D%0A%0D%0ALet%27s%20start%20consulting." 
           target="_blank"
           rel="noopener noreferrer"
           class="w-full py-5 bg-accent text-background text-center font-black rounded-2xl tracking-widest uppercase"
           onclick={() => isMenuOpen = false}
         >
-          LET'S TALK
+          CONSULT NOW
         </a>
       </div>
     </div>

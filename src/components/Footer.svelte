@@ -12,14 +12,14 @@
           <a href="/"><Logo size="sm" /></a>
         </div>
         <p class="text-xl font-medium text-white/90 italic">
-          "Sales Page = Sales Pitch"
+          "Value, Not Stuff"
         </p>
       </div>
 
       <!-- Socials & Contact -->
       <div class="flex flex-col items-center md:items-end">
         <h4 class="text-foreground font-bold uppercase tracking-widest mb-6">Contact & Socials</h4>
-          <a href="mailto:myslatudio@gmail.com?subject=Inquiry:%20High-Performance%20Infrastructure%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20goal%20with%20this%20project%20is:%20[Goal]%0D%0AOur%20target%20launch%20date%20is:%20[Date]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20in%20the%20$3,000+%20premium%20standard.%0D%0A%0D%0ALet%27s%20build%20something%20fast." class="hover:text-accent transition-colors flex items-center gap-2">
+          <a href="mailto:myslatudio@gmail.com?subject=Consultation%20Inquiry:%20Digital%20Business%20Plan%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20challenge%20right%20now%20is:%20[Challenge]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20$1,000%20for%20the%20full%20digital%20business%20plan.%0D%0A%0D%0ALet%27s%20start%20consulting." class="hover:text-accent transition-colors flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
             myslatudio@gmail.com
           </a>

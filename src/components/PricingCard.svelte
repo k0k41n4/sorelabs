@@ -41,10 +41,10 @@
     </ul>
 
     <a 
-      href="mailto:myslatudio@gmail.com?subject=Inquiry:%20High-Performance%20Infrastructure%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20goal%20with%20this%20project%20is:%20[Goal]%0D%0AOur%20target%20launch%20date%20is:%20[Date]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20in%20the%20$3,000+%20premium%20standard.%0D%0A%0D%0ALet%27s%20build%20something%20fast."
+      href="mailto:myslatudio@gmail.com?subject=Consultation%20Inquiry:%20Digital%20Business%20Plan%20for%20[Business%20Name]&body=Hi%20Kresna,%0D%0A%0D%0AMy%20business%20is:%20[Name/URL]%0D%0AOur%20main%20challenge%20right%20now%20is:%20[Challenge]%0D%0A%0D%0AI%20confirm%20that%20we%20are%20ready%20to%20invest%20$1,000%20for%20the%20full%20digital%20business%20plan.%0D%0A%0D%0ALet%27s%20start%20consulting."
       class="w-full py-5 text-center rounded-2xl font-black text-sm uppercase tracking-widest transition-all duration-300 {isPremium ? 'bg-white text-black hover:bg-gray-200 hover:scale-[1.02] shadow-xl' : 'bg-white/5 text-white border border-white/10 hover:bg-white/10 hover:border-white/20'}"
     >
-      Connect Now
+      Start Consulting Now
     </a>
   </div>
 </div>
